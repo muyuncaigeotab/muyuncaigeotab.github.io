@@ -65,8 +65,8 @@ title: MyAdmin API Reference
             )(),
                 parts = location.pathname.split("/"), path;
             path = parts.splice(0, parts.length - 2).join("/"),
-            /* Choose between '{{site.baseurl}}/MyAdminAPI_Sep21.xml' and 'https://myadmin.geotab.com/sdk-xml/MyAdminAPI.xml' */
-            url = referenceType === 'MyAdmin' ?  'https://myadmin.geotab.com/sdk-xml/MyAdminAPI.xml' : 'https://mypreview.geotab.com/sdk.xml';
+            /* Choose between '{{site.baseurl}}/MyAdminAPI_Sep21.xml' and 'https://myadmin.geotab.com/sdk-xml/MyAdminAPI.xml' and 'https://gcemyasvrt36.geotab.com/sdk-xml/MyAdminAPI.xml'*/
+            url = referenceType === 'MyAdmin' ?  'https://gcemyasvrt36.geotab.com/sdk-xml/MyAdminAPI.xml' : 'https://mypreview.geotab.com/sdk.xml';
 
             xhr.open("GET", url);
             xhr.setRequestHeader("Content-Type", "text/xml");
